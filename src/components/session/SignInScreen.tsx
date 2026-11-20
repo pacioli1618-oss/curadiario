@@ -12,7 +12,6 @@ import {Card} from '@/components/ui/Card';
 import {TextField} from '@/components/ui/TextField';
 import {Link} from '@/i18n/navigation';
 import {readPendingEmail, writePendingEmail} from '@/lib/device-store';
-import {site} from '@/lib/site';
 import {supabase} from '@/lib/supabase';
 
 const EMAIL_PATTERN = /^[^@\s]+@[^@\s]+\.[^@\s]+$/;
@@ -35,10 +34,11 @@ export function SignInScreen() {
     }
     setIsBusy(true);
     setError(null);
-    const origin = site.siteUrl ?? window.location.origin;
+    // Always this origin: the PKCE verifier is in this browser's storage for this address, so a
+    // link that returns anywhere else can never finish signing in.
     const {error: failure} = await supabase.auth.signInWithOtp({
       email: address,
-      options: {emailRedirectTo: `${origin}/auth/callback`, shouldCreateUser: true},
+      options: {emailRedirectTo: `${window.location.origin}/auth/callback`, shouldCreateUser: true},
     });
     setIsBusy(false);
     if (failure) {

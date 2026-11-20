@@ -8,8 +8,9 @@ if (!supabaseUrl || !supabasePublishableKey) {
 }
 
 // Browser client with a Supabase Auth session (magic link / e-mail code). PKCE: the link sends a
-// one-time code back to /auth/callback, exchanged for the session in this same browser.
+// one-time code back (normally to /auth/callback; to the Site URL when Supabase doesn't accept the
+// redirect), and the client exchanges it on whichever page it lands (detectSessionInUrl).
 // Every call goes through the public.cd_* RPCs (src/lib/api.ts); the tables are not exposed.
 export const supabase = createClient(supabaseUrl, supabasePublishableKey, {
-  auth: {flowType: 'pkce', persistSession: true, autoRefreshToken: true, detectSessionInUrl: false, storageKey: 'curadiario:auth'},
+  auth: {flowType: 'pkce', persistSession: true, autoRefreshToken: true, detectSessionInUrl: true, storageKey: 'curadiario:auth'},
 });

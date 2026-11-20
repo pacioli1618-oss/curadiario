@@ -1,5 +1,10 @@
 # Changelog
 
+## 0.1.1 — 2026-11-20
+
+* Fix: the magic link returns to the address where it was asked for (it went to the production
+  address even when signing in elsewhere), and a link that lands on the home page also signs in.
+
 ## 0.1.0 — 2026-11-20
 
 First pilot version.

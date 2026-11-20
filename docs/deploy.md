@@ -16,8 +16,12 @@ curadiário is the only Sidekick with sign-in, so Auth settings in the SideKick 
 
 1. Authentication → URL Configuration:
    * Site URL: `https://curadiario.gr1618.io`
-   * Redirect URLs: add `https://curadiario.gr1618.io/auth/callback` and, for local work,
-     `http://localhost:3000/auth/callback`.
+   * Redirect URLs: add `https://curadiario.gr1618.io/auth/callback`,
+     `https://curadiario-*.vercel.app/auth/callback` (Vercel addresses and previews) and, for local
+     work, `http://localhost:3000/auth/callback`.
+
+   The link always returns to the address where the person asked for it: the sign-in only finishes
+   in that same browser and address. A redirect Supabase doesn't accept falls back to the Site URL.
 2. Authentication → Sign In / Providers → Email: enabled, "Confirm email" on.
 3. Authentication → Emails → "Magic Link" template: include the 6-digit code, for when the link
    opens in another browser (the app accepts either):

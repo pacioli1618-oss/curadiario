@@ -14,7 +14,7 @@ export const site = {
   contact: {label: 'gr1618.io/apresentando-o-curadiario', href: 'https://gr1618.io/apresentando-o-curadiario/#respond'},
   /** "curadiario.gr1618.io", for "links start with …"; null when unknown. */
   host: siteUrl ? new URL(siteUrl).host : null,
-  /** Address the magic link returns to. Falls back to the current origin. */
+  /** Public address of the app (metadata). The magic link always returns to the current origin. */
   siteUrl,
   /** Date of the current Privacy and Terms text (YYYY-MM-DD). */
   legalUpdatedAt: '2026-11-20',
