@@ -16,7 +16,10 @@ export async function generateMetadata(): Promise<Metadata> {
 
 // Newest first. Each key has a date and up to MAX_ITEMS items in messages → Version.releases.
 // Keep in step with CHANGELOG.md (the developer's version of the same list).
-const releases = [{key: 'r0_1_0', version: '0.1.0'}] as const;
+const releases = [
+  {key: 'r0_1_1', version: '0.1.1'},
+  {key: 'r0_1_0', version: '0.1.0'},
+] as const;
 const MAX_ITEMS = 8;
 
 // /version · Which version is running and what changed, in plain words.

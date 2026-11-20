@@ -86,12 +86,30 @@
   "Blocks": {
     "title": "O que este diário vai registrar",
     "always": "Humor, palavras, nota e perguntas para a consulta estão sempre ligados. Dá para mudar depois.",
-    "aggression": {"title": "Agressividade", "hint": "Escala de 0 a 4 e contra quem ou o quê"},
-    "intensities": {"title": "Outras intensidades", "hint": "Ansiedade, irritabilidade, tristeza e energia, de 0 a 10"},
-    "sleep": {"title": "Sono e rotina", "hint": "Horários, despertares e alimentação"},
-    "medication": {"title": "Medicação", "hint": "Doses tomadas, esquecidas e efeitos observados"},
-    "events": {"title": "Eventos e gatilhos", "hint": "O que aconteceu antes de uma mudança"},
-    "strategies": {"title": "Comportamentos e estratégias", "hint": "O que foi feito e o que ajudou"}
+    "aggression": {
+      "title": "Agressividade",
+      "hint": "Escala de 0 a 4 e contra quem ou o quê"
+    },
+    "intensities": {
+      "title": "Outras intensidades",
+      "hint": "Ansiedade, irritabilidade, tristeza e energia, de 0 a 10"
+    },
+    "sleep": {
+      "title": "Sono e rotina",
+      "hint": "Horários, despertares e alimentação"
+    },
+    "medication": {
+      "title": "Medicação",
+      "hint": "Doses tomadas, esquecidas e efeitos observados"
+    },
+    "events": {
+      "title": "Eventos e gatilhos",
+      "hint": "O que aconteceu antes de uma mudança"
+    },
+    "strategies": {
+      "title": "Comportamentos e estratégias",
+      "hint": "O que foi feito e o que ajudou"
+    }
   },
   "Medicines": {
     "title": "Remédios em uso",
@@ -110,7 +128,12 @@
     "notFound": "Você não participa deste diário, ou ele foi excluído.",
     "status": "Cifrado de ponta a ponta · {count, plural, one {# pessoa} other {# pessoas}} · {role, select, owner {você criou} writer {você lê e escreve} other {você só lê}}",
     "tabsLabel": "Partes do diário",
-    "tabs": {"entries": "Entradas", "consult": "Consulta", "summary": "Resumo", "people": "Pessoas"}
+    "tabs": {
+      "entries": "Entradas",
+      "consult": "Consulta",
+      "summary": "Resumo",
+      "people": "Pessoas"
+    }
   },
   "Locked": {
     "back": "← Seus diários",
@@ -192,10 +215,27 @@
       "music": "música",
       "askedForHelp": "pediu ajuda"
     },
-    "targets": {"people": "pessoas", "objects": "objetos", "self": "a si mesmo"},
-    "intensities": {"anxiety": "Ansiedade", "irritability": "Irritabilidade", "sadness": "Tristeza", "energy": "Energia"},
-    "food": {"little": "comeu pouco", "normal": "comeu normal", "much": "comeu muito"},
-    "dose": {"taken": "Tomou", "missed": "Esqueceu", "late": "Outro horário"}
+    "targets": {
+      "people": "pessoas",
+      "objects": "objetos",
+      "self": "a si mesmo"
+    },
+    "intensities": {
+      "anxiety": "Ansiedade",
+      "irritability": "Irritabilidade",
+      "sadness": "Tristeza",
+      "energy": "Energia"
+    },
+    "food": {
+      "little": "comeu pouco",
+      "normal": "comeu normal",
+      "much": "comeu muito"
+    },
+    "dose": {
+      "taken": "Tomou",
+      "missed": "Esqueceu",
+      "late": "Outro horário"
+    }
   },
   "EntryForm": {
     "back": "← Voltar",
@@ -236,20 +276,56 @@
     "save": "Salvar entrada"
   },
   "Mood": {
-    "plus3": {"title": "Euforia grave", "hint": "Agitação intensa, quase não dormiu, gastos ou atitudes de risco"},
-    "plus2": {"title": "Euforia moderada", "hint": "Acelerado, muitas ideias, fala sem parar, pouco sono"},
-    "plus1": {"title": "Euforia leve", "hint": "Mais animado e falante que o normal"},
-    "zero": {"title": "Estável", "hint": "Humor habitual"},
-    "minus1": {"title": "Depressão leve", "hint": "Desanimado, mas fez as atividades do dia"},
-    "minus2": {"title": "Depressão moderada", "hint": "Sem vontade, deixou de fazer coisas, choro"},
-    "minus3": {"title": "Depressão grave", "hint": "Quase não saiu da cama nem comeu, sem esperança"}
+    "plus3": {
+      "title": "Euforia grave",
+      "hint": "Agitação intensa, quase não dormiu, gastos ou atitudes de risco"
+    },
+    "plus2": {
+      "title": "Euforia moderada",
+      "hint": "Acelerado, muitas ideias, fala sem parar, pouco sono"
+    },
+    "plus1": {
+      "title": "Euforia leve",
+      "hint": "Mais animado e falante que o normal"
+    },
+    "zero": {
+      "title": "Estável",
+      "hint": "Humor habitual"
+    },
+    "minus1": {
+      "title": "Depressão leve",
+      "hint": "Desanimado, mas fez as atividades do dia"
+    },
+    "minus2": {
+      "title": "Depressão moderada",
+      "hint": "Sem vontade, deixou de fazer coisas, choro"
+    },
+    "minus3": {
+      "title": "Depressão grave",
+      "hint": "Quase não saiu da cama nem comeu, sem esperança"
+    }
   },
   "Aggression": {
-    "level0": {"title": "Nenhuma", "hint": "Sem sinais de agressividade"},
-    "level1": {"title": "Irritação", "hint": "Tom ríspido, resmungos, impaciência"},
-    "level2": {"title": "Agressão verbal", "hint": "Gritos, xingamentos ou ameaças"},
-    "level3": {"title": "Contra objetos", "hint": "Bateu portas, jogou ou quebrou coisas"},
-    "level4": {"title": "Agressão física", "hint": "Empurrou, bateu ou machucou alguém ou a si"}
+    "level0": {
+      "title": "Nenhuma",
+      "hint": "Sem sinais de agressividade"
+    },
+    "level1": {
+      "title": "Irritação",
+      "hint": "Tom ríspido, resmungos, impaciência"
+    },
+    "level2": {
+      "title": "Agressão verbal",
+      "hint": "Gritos, xingamentos ou ameaças"
+    },
+    "level3": {
+      "title": "Contra objetos",
+      "hint": "Bateu portas, jogou ou quebrou coisas"
+    },
+    "level4": {
+      "title": "Agressão física",
+      "hint": "Empurrou, bateu ou machucou alguém ou a si"
+    }
   },
   "Consult": {
     "intro": "Perguntas e pontos para levar ao médico ou terapeuta. Marque quando forem conversados.",
@@ -267,7 +343,12 @@
   },
   "Summary": {
     "period": "Período",
-    "periods": {"7": "7 dias", "30": "30 dias", "90": "90 dias", "all": "Tudo"},
+    "periods": {
+      "7": "7 dias",
+      "30": "30 dias",
+      "90": "90 dias",
+      "all": "Tudo"
+    },
     "chartTitle": "Humor por entrada",
     "chartLabel": "Humor por entrada, da mais antiga para a mais recente: {values}",
     "noEntries": "Nenhuma entrada neste período.",
@@ -310,7 +391,11 @@
   },
   "People": {
     "you": "(você)",
-    "roles": {"owner": "Criou o diário", "writer": "Lê e escreve", "reader": "Só lê"},
+    "roles": {
+      "owner": "Criou o diário",
+      "writer": "Lê e escreve",
+      "reader": "Só lê"
+    },
     "roleFor": "Permissão de {name}",
     "remove": "Remover",
     "removeLabel": "Remover {name} do diário",
@@ -380,6 +465,10 @@
     "pilot": "Versão de teste: o curadiário está em piloto com poucas famílias. Se algo der errado, avise pelo contato na página Sobre.",
     "release": "Versão {version}",
     "releases": {
+      "r0_1_1": {
+        "date": "20 de novembro de 2026",
+        "i1": "Correção: o link de acesso do e-mail agora volta para o mesmo endereço em que foi pedido e conclui a entrada."
+      },
       "r0_1_0": {
         "date": "20 de novembro de 2026",
         "i1": "Primeira versão do piloto.",

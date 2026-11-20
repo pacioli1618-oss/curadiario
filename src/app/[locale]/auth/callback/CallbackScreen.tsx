@@ -2,7 +2,6 @@
 
 import {useEffect, useState} from 'react';
 import {useTranslations} from 'next-intl';
-import {useSearchParams} from 'next/navigation';
 import {AppHeader} from '@/components/layout/AppHeader';
 import blocks from '@/components/layout/Blocks.module.css';
 import screen from '@/components/layout/Screen.module.css';
@@ -12,18 +11,19 @@ import {useRouter} from '@/i18n/navigation';
 import {writePendingEmail} from '@/lib/device-store';
 import {supabase} from '@/lib/supabase';
 
+// The Supabase client exchanges the ?code= by itself (detectSessionInUrl); getSession() waits for
+// that, so here we only wait and move on.
 export function CallbackScreen() {
   const t = useTranslations('Callback');
   const router = useRouter();
-  const code = useSearchParams().get('code');
   const [hasFailed, setHasFailed] = useState(false);
 
   useEffect(() => {
-    if (!code) return;
     let isActive = true;
-    void supabase.auth.exchangeCodeForSession(code).then(({error}) => {
+    void supabase.auth.getSession().then(({data}) => {
       if (!isActive) return;
-      if (error) {
+      if (!data.session) {
+        // A link opened in another browser (or the e-mail app's own browser) has no PKCE verifier here.
         setHasFailed(true);
         return;
       }
@@ -33,10 +33,9 @@ export function CallbackScreen() {
     return () => {
       isActive = false;
     };
-  }, [code, router]);
+  }, [router]);
 
-  // A link opened in another browser (or the e-mail app's own browser) has no PKCE verifier here.
-  if (!code || hasFailed) {
+  if (hasFailed) {
     return (
       <main className={screen.screen}>
         <AppHeader />
