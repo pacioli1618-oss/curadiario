@@ -1,0 +1,144 @@
+/* curadiário tokens: deep teal and mint on cool greys (docs/brand/). Names follow docs/conventions.md. */
+:root {
+  color-scheme: light;
+
+  /* Color — light. Deep teal for action, pale mint for highlights (the lantern's flame). */
+  --surface: #f2f4f3;
+  --card: #ffffff;
+  --ink: #1b2421;
+  --ink-soft: #3f4c47;
+  --ink-muted: #56635e;
+  --border: #d9dfdc;
+  --border-control: #8a9792;
+  --divider: #e8ecea;
+  --track: #e3e8e6;
+  --brand: #1d6b61;
+  --brand-strong: #145048;
+  --brand-tint: #e1efec;
+  --on-brand: #ffffff;
+  /* Mint: only as a background, always with --on-signal text. */
+  --signal: #bfe6df;
+  --on-signal: #10302b;
+  /* Warnings and errors. */
+  --ember: #b42318;
+  --ember-strong: #8f1c13;
+  --ember-tint: #fdecea;
+  --ember-track: #f6d3cf;
+  /* Crisis notices (CVV, SAMU). */
+  --warn-tint: #fff4e0;
+  --warn-ink: #6b4300;
+  --warn-track: #f3dcb0;
+  /* Lantern: frame and flame. */
+  --logo-frame: #1d6b61;
+  --logo-flame: #3fa796;
+
+  /* Spacing */
+  --space-1: 4px;
+  --space-2: 8px;
+  --space-3: 12px;
+  --space-4: 16px;
+  --space-5: 20px;
+  --space-6: 24px;
+
+  /* Radius */
+  --radius-sm: 6px;
+  --radius-md: 10px;
+  --radius-lg: 14px;
+  --radius-pill: 999px;
+
+  /* Size */
+  --size-chip: 40px;
+  --size-control: 44px;
+  --size-cta: 52px;
+
+  /* Type */
+  --font-sans: var(--font-inter), Inter, system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  --font-display: var(--font-manrope), Manrope, var(--font-sans);
+  --font-mono: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+}
+
+/* Dark theme: <html data-theme="dark">, set by src/lib/theme.ts from the device or the header button.
+   Screen only: paper is always light, so printed reports keep dark text. */
+@media screen {
+  :root[data-theme='dark'] {
+    color-scheme: dark;
+    --surface: #111816;
+    --card: #1a2321;
+    --ink: #e8eeec;
+    --ink-soft: #c2ccc8;
+    --ink-muted: #9aa8a3;
+    --border: #2c3835;
+    --border-control: #6b7a75;
+    --divider: #222d2a;
+    --track: #2c3835;
+    --brand: #5fc2b3;
+    --brand-strong: #8edbcf;
+    --brand-tint: #183531;
+    --on-brand: #0b1f1c;
+    --signal: #2d5c55;
+    --on-signal: #e8eeec;
+    --ember: #ff8a80;
+    --ember-strong: #ffb4ab;
+    --ember-tint: #3a1715;
+    --ember-track: #4a201c;
+    --warn-tint: #33270f;
+    --warn-ink: #f2d29b;
+    --warn-track: #5a4520;
+    --logo-frame: #5fc2b3;
+    --logo-flame: #bfe6df;
+  }
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  background: var(--surface);
+  color: var(--ink);
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+  -webkit-tap-highlight-color: transparent;
+}
+
+button,
+input,
+select,
+textarea {
+  font: inherit;
+  color: inherit;
+}
+
+h1,
+h2,
+h3 {
+  font-family: var(--font-display);
+}
+
+/* One focus style for every control: visible on keyboard, invisible on tap. */
+:focus-visible {
+  outline: 2px solid var(--brand);
+  outline-offset: 2px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    transition: none !important;
+  }
+}
+
+@media print {
+  :root {
+    color-scheme: light;
+  }
+  html,
+  body {
+    background: var(--card);
+  }
+}
+
+a {
+  color: var(--brand);
+}

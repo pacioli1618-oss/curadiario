@@ -1,0 +1,539 @@
+{
+  "Metadata": {
+    "title": "curadiário — diário de cuidado para a família",
+    "description": "Anote como foi o dia de quem você cuida e compartilhe só com quem você escolher. Tudo é cifrado no seu aparelho."
+  },
+  "Common": {
+    "loading": "Carregando…",
+    "loadFailed": "Não deu para carregar. Confira a internet e tente de novo."
+  },
+  "Session": {
+    "loading": "Carregando…",
+    "preparing": "Preparando este aparelho…",
+    "noStorage": "Este navegador não consegue guardar as chaves do diário (janela anônima ou navegador de outro app). Abra o curadiário no navegador normal do celular.",
+    "deviceFailed": "Não deu para preparar este aparelho. Confira a internet e recarregue a página."
+  },
+  "SignIn": {
+    "headline": "Um diário de cuidado, só para quem você escolher.",
+    "intro": "O que você escreve é cifrado neste aparelho antes de sair dele. Nem nós conseguimos ler.",
+    "emailLabel": "Seu e-mail",
+    "emailPlaceholder": "nome@exemplo.com",
+    "emailInvalid": "Confira o e-mail.",
+    "send": "Enviar link de acesso",
+    "sendFailed": "Não deu para enviar o e-mail. Tente de novo em instantes.",
+    "tooMany": "Muitos pedidos seguidos. Espere alguns minutos e tente de novo.",
+    "consent": "Sem senha para decorar: mandamos um link para o seu e-mail. Ao continuar, você concorda com os <terms>termos de uso</terms> e a <privacy>política de privacidade</privacy>.",
+    "sentTitle": "Confira seu e-mail",
+    "sentBody": "Mandamos um link para {email}. Abra o link neste mesmo aparelho e navegador.",
+    "codeLabel": "Ou digite o código do e-mail",
+    "codeHint": "Use o código se o link abrir em outro aplicativo.",
+    "codeInvalid": "Código inválido ou vencido. Peça um novo link.",
+    "codeSubmit": "Entrar com o código",
+    "otherEmail": "Usar outro e-mail"
+  },
+  "Callback": {
+    "signingIn": "Entrando…",
+    "failedTitle": "Este link não abriu aqui",
+    "failedBody": "O link precisa ser aberto no mesmo navegador em que você pediu. Volte ao início e entre com o código do e-mail, ou peça um novo link.",
+    "back": "Voltar ao início"
+  },
+  "Crisis": {
+    "general": "O curadiário é um caderno de anotações. Não substitui acompanhamento profissional e não é canal de emergência. Em crise, ligue 188 (CVV) ou 192 (SAMU).",
+    "risk": "Se houver risco agora, não espere a consulta: ligue 188 (CVV) ou 192 (SAMU). Ninguém acompanha este diário em tempo real.",
+    "self": "Se a pessoa corre risco agora, ligue 192 (SAMU) ou 188 (CVV). Conte também ao médico ou terapeuta assim que possível."
+  },
+  "Home": {
+    "title": "Seus diários",
+    "signedInAs": "Entrou como {email}",
+    "diaries": "Diários",
+    "empty": "Você ainda não tem nenhum diário. Crie um, ou peça para alguém da família convidar o seu e-mail.",
+    "locked": "Diário aguardando liberação",
+    "waiting": "Aguardando",
+    "meta": "{role, select, owner {Você criou} writer {Você lê e escreve} other {Você só lê}} · {count, plural, one {# pessoa} other {# pessoas}}",
+    "pending": "{count, plural, one {1 aparelho para aprovar} other {# aparelhos para aprovar}}",
+    "create": "Criar um diário",
+    "account": "Aparelhos e conta",
+    "inviteTitle": "Você recebeu um convite",
+    "inviteBody": "{name} ({email}) convidou você para um diário, para {role, select, writer {ler e escrever} other {só ler}}.",
+    "yourName": "Seu nome no diário",
+    "yourNameHint": "É como as outras pessoas vão ver você.",
+    "nameRequired": "Escreva seu nome.",
+    "accept": "Aceitar",
+    "decline": "Recusar"
+  },
+  "NewDiary": {
+    "title": "Criar um diário",
+    "back": "← Início",
+    "diaryName": "Nome do diário",
+    "diaryNameHint": "Até o nome é cifrado. Ex.: Acompanhamento do vô João.",
+    "myName": "Seu nome",
+    "myNameHint": "Aparece nas entradas que você escrever.",
+    "terms": "Li e aceito os <terms>termos de uso</terms>.",
+    "aboutSomeone": "Se o diário for sobre outra pessoa, combine com ela (ou com quem responde por ela) antes de começar.",
+    "required": "Preencha o nome do diário e o seu nome.",
+    "termsRequired": "Para continuar, aceite os termos de uso.",
+    "submit": "Criar diário"
+  },
+  "Recovery": {
+    "title": "Guarde seu código de recuperação",
+    "intro": "A chave do diário fica só nos aparelhos de quem participa. Se você perder este aparelho e não houver mais ninguém no diário para aprovar o novo, este código é o único jeito de abrir o diário de novo.",
+    "codeLabel": "Código de recuperação",
+    "print": "Imprimir",
+    "warning": "Nós não temos cópia deste código e não conseguimos recuperá-lo. Guarde fora deste celular: no papel, num cofre de senhas ou com alguém de confiança.",
+    "saved": "Guardei o código num lugar seguro, fora deste celular.",
+    "continue": "Continuar"
+  },
+  "Blocks": {
+    "title": "O que este diário vai registrar",
+    "always": "Humor, palavras, nota e perguntas para a consulta estão sempre ligados. Dá para mudar depois.",
+    "aggression": {"title": "Agressividade", "hint": "Escala de 0 a 4 e contra quem ou o quê"},
+    "intensities": {"title": "Outras intensidades", "hint": "Ansiedade, irritabilidade, tristeza e energia, de 0 a 10"},
+    "sleep": {"title": "Sono e rotina", "hint": "Horários, despertares e alimentação"},
+    "medication": {"title": "Medicação", "hint": "Doses tomadas, esquecidas e efeitos observados"},
+    "events": {"title": "Eventos e gatilhos", "hint": "O que aconteceu antes de uma mudança"},
+    "strategies": {"title": "Comportamentos e estratégias", "hint": "O que foi feito e o que ajudou"}
+  },
+  "Medicines": {
+    "title": "Remédios em uso",
+    "empty": "Nenhum remédio cadastrado.",
+    "nameLabel": "Nome e dose",
+    "namePlaceholder": "Ex.: nome 50 mg",
+    "timeLabel": "Horário",
+    "add": "Adicionar remédio",
+    "remove": "Remover {name}",
+    "removeShort": "Remover",
+    "notReminder": "O curadiário só registra o que foi tomado. Não é lembrete de horário."
+  },
+  "Diary": {
+    "back": "← Seus diários",
+    "untitled": "Diário",
+    "notFound": "Você não participa deste diário, ou ele foi excluído.",
+    "status": "Cifrado de ponta a ponta · {count, plural, one {# pessoa} other {# pessoas}} · {role, select, owner {você criou} writer {você lê e escreve} other {você só lê}}",
+    "tabsLabel": "Partes do diário",
+    "tabs": {"entries": "Entradas", "consult": "Consulta", "summary": "Resumo", "people": "Pessoas"}
+  },
+  "Locked": {
+    "back": "← Seus diários",
+    "title": "Este aparelho ainda não tem a chave",
+    "intro": "Seu login está certo, mas o conteúdo só abre em aparelhos aprovados por alguém do diário.",
+    "askTitle": "Peça a aprovação",
+    "askBody": "Peça para {names} abrir o diário e aprovar este aparelho, na aba Pessoas.",
+    "fingerprintLabel": "Código deste aparelho:",
+    "fingerprintHint": "Quem for aprovar vai ver um código. Confira com a pessoa se é este mesmo antes de ela aprovar.",
+    "check": "Já aprovaram, abrir de novo",
+    "recoverTitle": "Usar o código de recuperação",
+    "recoverBody": "Você criou este diário. Com o código de recuperação, este aparelho recebe a chave na hora.",
+    "codeLabel": "Código de recuperação",
+    "codeInvalid": "O código tem 24 letras e números. Confira e tente de novo.",
+    "recover": "Recuperar com o código"
+  },
+  "Approvals": {
+    "title": "Aparelhos esperando aprovação",
+    "intro": "Só aprove aparelhos de quem você reconhece. Confira o código com a pessoa: tem que ser igual ao que aparece no aparelho dela.",
+    "who": "{name} · {label}",
+    "unknownDevice": "aparelho sem nome",
+    "since": "Pedido em {date}",
+    "fingerprint": "Código do aparelho:",
+    "approve": "Aprovar este aparelho"
+  },
+  "Entries": {
+    "new": "Nova entrada",
+    "export": "Exportar relatório",
+    "empty": "Nenhuma entrada ainda.",
+    "readOnly": "Você tem acesso só de leitura a este diário.",
+    "unreadable": "{count, plural, one {1 entrada não pôde ser aberta neste aparelho.} other {# entradas não puderam ser abertas neste aparelho.}}"
+  },
+  "Entry": {
+    "reporterObserved": "Observado por {name}",
+    "reporterSelf": "Relato da própria pessoa · anotado por {name}",
+    "formerMember": "alguém que saiu do diário",
+    "removedMedicine": "remédio removido",
+    "allTaken": "todas as doses tomadas",
+    "forConsultation": "Levar para a próxima consulta",
+    "wakes": "{count, plural, =0 {sem despertares} one {1 despertar} =4 {4 ou mais despertares} other {# despertares}}",
+    "helped": "ajudou: {text}",
+    "edit": "Editar",
+    "delete": "Excluir",
+    "deleteConfirm": "Excluir esta entrada? Não dá para desfazer.",
+    "details": {
+      "aggression": "Agressividade",
+      "intensities": "Intensidades",
+      "sleep": "Sono",
+      "medication": "Medicação",
+      "sideEffects": "Efeitos",
+      "events": "Eventos",
+      "strategies": "Estratégias",
+      "consultation": "Consulta"
+    },
+    "words": {
+      "calm": "calmo",
+      "cheerful": "animado",
+      "tired": "cansado",
+      "sad": "triste",
+      "anxious": "ansioso",
+      "irritated": "irritado",
+      "agitated": "agitado",
+      "confused": "confuso"
+    },
+    "events": {
+      "argument": "discussão",
+      "routineChange": "mudança de rotina",
+      "visit": "visita",
+      "appointment": "consulta",
+      "badNews": "notícia difícil",
+      "wentOut": "saiu de casa"
+    },
+    "strategies": {
+      "isolation": "isolamento",
+      "impulsivity": "impulsividade",
+      "breathing": "respiração",
+      "walk": "caminhada",
+      "talk": "conversa",
+      "music": "música",
+      "askedForHelp": "pediu ajuda"
+    },
+    "targets": {"people": "pessoas", "objects": "objetos", "self": "a si mesmo"},
+    "intensities": {"anxiety": "Ansiedade", "irritability": "Irritabilidade", "sadness": "Tristeza", "energy": "Energia"},
+    "food": {"little": "comeu pouco", "normal": "comeu normal", "much": "comeu muito"},
+    "dose": {"taken": "Tomou", "missed": "Esqueceu", "late": "Outro horário"}
+  },
+  "EntryForm": {
+    "back": "← Voltar",
+    "title": "Nova entrada",
+    "editTitle": "Editar entrada",
+    "when": "Quando",
+    "reporter": "Quem relata",
+    "observed": "Eu observei",
+    "self": "A pessoa relatou",
+    "mood": "Humor",
+    "moodHint": "da euforia à depressão",
+    "moodRequired": "Escolha o humor do dia.",
+    "aggression": "Agressividade",
+    "aggressionHint": "o momento mais intenso do dia",
+    "targets": "Contra quem ou o quê",
+    "words": "Palavras para o estado de hoje",
+    "note": "Nota",
+    "notePlaceholder": "Como foi o dia, o que chamou atenção…",
+    "filled": "preenchido",
+    "optional": "opcional",
+    "intensitiesHint": "0 = nada, 10 = o máximo. Deixe em branco o que não observou.",
+    "recordSleep": "Anotar o sono desta noite",
+    "sleptAt": "Dormiu",
+    "wokeAt": "Acordou",
+    "sleptFor": "Dormiu {time}",
+    "wakes": "Despertares à noite",
+    "wakesMany": "4 ou mais",
+    "food": "Alimentação",
+    "noMedicines": "Nenhum remédio cadastrado. Quem criou o diário cadastra em Pessoas → Ajustes.",
+    "sideEffects": "Efeitos observados",
+    "sideEffectsPlaceholder": "Sonolência, tremor, enjoo…",
+    "eventTags": "O que aconteceu",
+    "eventText": "O que veio antes da mudança",
+    "strategyTags": "O que foi feito",
+    "helped": "O que ajudou",
+    "forConsultation": "Levar esta entrada para a próxima consulta",
+    "encrypted": "Tudo é cifrado neste aparelho antes de ser enviado",
+    "save": "Salvar entrada"
+  },
+  "Mood": {
+    "plus3": {"title": "Euforia grave", "hint": "Agitação intensa, quase não dormiu, gastos ou atitudes de risco"},
+    "plus2": {"title": "Euforia moderada", "hint": "Acelerado, muitas ideias, fala sem parar, pouco sono"},
+    "plus1": {"title": "Euforia leve", "hint": "Mais animado e falante que o normal"},
+    "zero": {"title": "Estável", "hint": "Humor habitual"},
+    "minus1": {"title": "Depressão leve", "hint": "Desanimado, mas fez as atividades do dia"},
+    "minus2": {"title": "Depressão moderada", "hint": "Sem vontade, deixou de fazer coisas, choro"},
+    "minus3": {"title": "Depressão grave", "hint": "Quase não saiu da cama nem comeu, sem esperança"}
+  },
+  "Aggression": {
+    "level0": {"title": "Nenhuma", "hint": "Sem sinais de agressividade"},
+    "level1": {"title": "Irritação", "hint": "Tom ríspido, resmungos, impaciência"},
+    "level2": {"title": "Agressão verbal", "hint": "Gritos, xingamentos ou ameaças"},
+    "level3": {"title": "Contra objetos", "hint": "Bateu portas, jogou ou quebrou coisas"},
+    "level4": {"title": "Agressão física", "hint": "Empurrou, bateu ou machucou alguém ou a si"}
+  },
+  "Consult": {
+    "intro": "Perguntas e pontos para levar ao médico ou terapeuta. Marque quando forem conversados.",
+    "newLabel": "Nova pergunta",
+    "newPlaceholder": "Ex.: o sono piorou depois do remédio novo?",
+    "add": "Adicionar",
+    "pending": "Pendentes ({count})",
+    "nonePending": "Nenhuma pergunta pendente.",
+    "flagged": "Entradas marcadas para a consulta",
+    "noNote": "(sem nota)",
+    "done": "Já conversadas",
+    "delete": "Excluir",
+    "deleteLabel": "Excluir a pergunta {text}",
+    "deleteConfirm": "Excluir esta pergunta?"
+  },
+  "Summary": {
+    "period": "Período",
+    "periods": {"7": "7 dias", "30": "30 dias", "90": "90 dias", "all": "Tudo"},
+    "chartTitle": "Humor por entrada",
+    "chartLabel": "Humor por entrada, da mais antiga para a mais recente: {values}",
+    "noEntries": "Nenhuma entrada neste período.",
+    "averageMood": "humor médio",
+    "averageSleep": "sono médio · {count, plural, one {1 noite} other {# noites}}",
+    "missedDoses": "doses esquecidas · de {count}",
+    "aggressionDays": "dias com agressividade · máx. {level}",
+    "pendingQuestions": "perguntas pendentes",
+    "exportTitle": "Exportar relatório",
+    "format": "Formato",
+    "pdf": "PDF (imprimir)",
+    "csv": "Planilha",
+    "partNumbers": "Números do período",
+    "partEntries": "Entradas",
+    "partNotes": "Notas escritas",
+    "partNotesHint": "Desligue para mandar só os números e as escalas.",
+    "partQuestions": "Perguntas para a consulta",
+    "unencrypted": "O arquivo exportado sai sem cifragem. Guarde e envie só para quem deve ver.",
+    "print": "Gerar PDF",
+    "download": "Baixar planilha",
+    "share": "Compartilhar",
+    "pdfHint": "Abre a janela de impressão do aparelho: escolha \"Salvar como PDF\". O relatório é montado aqui, sem passar pelo servidor.",
+    "downloaded": "Planilha salva: {file}",
+    "reportPeriod": "Período: {period} · gerado em {date}",
+    "reportNumbers": "{count, plural, one {1 entrada} other {# entradas}} · humor médio {mood} · sono médio {sleep} · {missed} doses esquecidas · {aggression} dias com agressividade",
+    "reportFooter": "Gerado pelo curadiário, um caderno de anotações da família. Não é prontuário nem avaliação clínica.",
+    "colWhen": "Quando",
+    "colDate": "Data",
+    "colTime": "Hora",
+    "colReporter": "Quem relata",
+    "colMoodValue": "Humor (−3 a +3)",
+    "colMood": "Humor",
+    "colAggressionValue": "Agressividade (0 a 4)",
+    "colAggression": "Agressividade",
+    "colSleepHours": "Horas de sono",
+    "colDetails": "Detalhes",
+    "colNote": "Nota",
+    "reporterObserved": "observado",
+    "reporterSelf": "relato próprio"
+  },
+  "People": {
+    "you": "(você)",
+    "roles": {"owner": "Criou o diário", "writer": "Lê e escreve", "reader": "Só lê"},
+    "roleFor": "Permissão de {name}",
+    "remove": "Remover",
+    "removeLabel": "Remover {name} do diário",
+    "removeConfirm": "Remover {name} do diário? A pessoa perde o acesso na hora, e as próximas entradas passam a usar uma chave nova.",
+    "invitePending": "Convite pendente · {role, select, writer {lê e escreve} other {só lê}}",
+    "cancelInvite": "Cancelar",
+    "inviteTitle": "Convidar alguém de confiança",
+    "email": "E-mail",
+    "permission": "Permissão",
+    "invite": "Convidar",
+    "inviteSent": "Convite registrado para {email}. Avise a pessoa: ela entra no curadiário com este e-mail, aceita o convite e você aprova o aparelho dela aqui.",
+    "copyLink": "Copiar o endereço do app",
+    "inviteHint": "O convite fica esperando a pessoa entrar com este e-mail. Ninguém recebe acesso sem a sua aprovação do aparelho.",
+    "myName": "Seu nome neste diário",
+    "saveName": "Salvar nome",
+    "leave": "Sair deste diário",
+    "leaveConfirm": "Sair deste diário? Para voltar, você vai precisar de um novo convite."
+  },
+  "Settings": {
+    "title": "Ajustes do diário",
+    "name": "Nome do diário",
+    "nameRequired": "Escreva o nome do diário.",
+    "save": "Salvar ajustes",
+    "delete": "Excluir este diário",
+    "deletePrompt": "Isso apaga o diário e todas as entradas para todo mundo, para sempre. Para confirmar, escreva o nome do diário: {name}",
+    "deleteMismatch": "O nome não confere. Nada foi excluído."
+  },
+  "Account": {
+    "title": "Aparelhos e conta",
+    "back": "← Seus diários",
+    "signedInAs": "Entrou como {email}",
+    "thisDevice": "Este aparelho",
+    "thisDeviceBody": "Código deste aparelho, para conferir quando alguém for aprovar:",
+    "devices": "Seus aparelhos",
+    "devicesHint": "Perdeu um celular? Remova-o aqui: ele perde as chaves e os diários passam a usar chaves novas.",
+    "unknownDevice": "aparelho sem nome",
+    "current": "(este)",
+    "lastSeen": "Usado em {date}",
+    "revoke": "Remover",
+    "revokeConfirm": "Remover o aparelho {label}? Ele deixa de abrir os diários.",
+    "signOut": "Sair da conta neste aparelho",
+    "signOutHint": "As chaves continuam guardadas neste navegador: ao entrar de novo com o mesmo e-mail, você não precisa de nova aprovação.",
+    "delete": "Excluir minha conta",
+    "deleteConfirm": "Excluir sua conta? Os diários que você criou são apagados para todo mundo, e você sai dos outros. Não dá para desfazer."
+  },
+  "Errors": {
+    "not_authenticated": "Sua sessão terminou. Entre de novo.",
+    "not_authorized": "Você não tem permissão para fazer isso neste diário.",
+    "invalid_input": "Algo não ficou certo nos dados. Confira e tente de novo.",
+    "device_not_found": "Este aparelho foi removido da sua conta. Recarregue a página.",
+    "too_many_devices": "Você já tem 10 aparelhos. Remova algum em Aparelhos e conta.",
+    "too_many_diaries": "Você já criou 20 diários, o limite do piloto.",
+    "stale_key_version": "O diário mudou de chave enquanto você escrevia. Recarregue a página e tente de novo; o texto não foi salvo.",
+    "already_member": "Esta pessoa já participa do diário.",
+    "diary_full": "Este diário chegou ao limite do piloto.",
+    "invite_not_found": "Este convite não existe mais.",
+    "member_not_found": "Esta pessoa não participa mais do diário.",
+    "invalid_recovery_code": "Este código não abre este diário. Confira letra por letra.",
+    "key_missing": "Este aparelho não tem a chave atual do diário. Recarregue a página.",
+    "network": "Sem conexão. Confira a internet e tente de novo.",
+    "unknown": "Algo deu errado. Tente de novo em instantes."
+  },
+  "Version": {
+    "title": "Versão e novidades",
+    "back": "← Início",
+    "current": "Você está usando a versão {version}",
+    "pilot": "Versão de teste: o curadiário está em piloto com poucas famílias. Se algo der errado, avise pelo contato na página Sobre.",
+    "release": "Versão {version}",
+    "releases": {
+      "r0_1_0": {
+        "date": "20 de novembro de 2026",
+        "i1": "Primeira versão do piloto.",
+        "i2": "Entrada por link no e-mail, sem senha.",
+        "i3": "Tudo cifrado no aparelho: chaves só nos aparelhos aprovados e código de recuperação.",
+        "i4": "Humor de −3 a +3, agressividade de 0 a 4 e blocos opcionais de sono, medicação, eventos e estratégias.",
+        "i5": "Perguntas para a consulta e resumo do período, com PDF e planilha.",
+        "i6": "Convites para ler e escrever ou só ler, e aprovação de aparelhos novos."
+      }
+    },
+    "code": "Código aberto em <repo>github.com/pacioli1618-oss/curadiario</repo>."
+  },
+  "Share": {
+    "copy": "Copiar",
+    "copied": "Copiado",
+    "copyFailed": "Não deu para copiar. Toque e segure no texto para copiar."
+  },
+  "LocaleSwitcher": {
+    "label": "Idioma"
+  },
+  "ThemeSwitcher": {
+    "label": "Tema: {choice, select, light {claro} dark {escuro} other {automático, segue o aparelho}}. Toque para mudar."
+  },
+  "NotFound": {
+    "title": "Página não encontrada",
+    "body": "Confira o endereço.",
+    "cta": "Ir para o início"
+  },
+  "Legal": {
+    "about": "Sobre",
+    "privacy": "Privacidade",
+    "terms": "Termos",
+    "linksLabel": "Sobre o curadiário",
+    "updated": "Atualizado em {date}",
+    "back": "Voltar",
+    "contactTitle": "Contato",
+    "contactBody": "Dúvidas, sugestões ou algo errado: deixe um comentário em <link>{contact}</link>. Os comentários só aparecem depois de aprovados pelo editor, e pedidos sobre seus dados nunca são publicados.",
+    "version": "versão {version}"
+  },
+  "About": {
+    "title": "Sobre o curadiário",
+    "intro": "Cura é latim para \"cuidado\". O curadiário é um diário de acompanhamento para famílias, da série Sidekick do GR1618 Labs.",
+    "sections": {
+      "what": {
+        "title": "Para que serve",
+        "p1": "Quem cuida de alguém anota como foi o dia: humor, sono, remédios, o que aconteceu, o que ajudou e o que foi difícil. Outras pessoas de confiança, da família ou do tratamento, podem ler ou escrever junto.",
+        "p2": "No resumo do período, o diário vira um relatório para levar à consulta, com as perguntas que a família quer fazer.",
+        "p3": "É um caderno de anotações combinado entre as pessoas. Não é prontuário, não faz diagnóstico, não substitui médico, psicólogo ou terapeuta e não é canal de emergência."
+      },
+      "crisis": {
+        "title": "Em caso de crise",
+        "p1": "Ligue 188 (CVV, 24 horas, gratuito) ou 192 (SAMU). Ninguém do curadiário acompanha o que é escrito, e nós não conseguimos ler as entradas."
+      },
+      "safety": {
+        "title": "Como reconhecer um link verdadeiro",
+        "p1": "Os links do curadiário começam com {host}. O curadiário nunca pede senha, documento, código de recuperação ou pagamento.",
+        "p2": "Desconfie de mensagens que peçam qualquer uma dessas coisas em nome dele. O código de recuperação é só seu: ninguém do curadiário vai pedir."
+      },
+      "who": {
+        "title": "Quem faz",
+        "p1": "O curadiário é feito por {operator} como projeto independente. É gratuito, sem anúncios e sem venda de dados.",
+        "p2": "Está em fase de piloto, com poucas famílias, antes de abrir para o público."
+      },
+      "code": {
+        "title": "Código aberto",
+        "p1": "Todo o código está publicado em <repo>github.com/pacioli1618-oss/curadiario</repo>, sob a licença AGPL-3.0. Qualquer pessoa pode conferir que o conteúdo é cifrado antes de sair do aparelho."
+      }
+    }
+  },
+  "Privacy": {
+    "title": "Privacidade",
+    "intro": "O curadiário foi feito para que nem nós consigamos ler o que você escreve. Esta página explica o que vai para o servidor e o que não vai.",
+    "sections": {
+      "cannotRead": {
+        "title": "O que nós não conseguimos ler",
+        "p1": "O nome do diário, os ajustes, os remédios cadastrados, cada entrada (humor, agressividade, notas, sono, medicação, eventos) e as perguntas para a consulta são cifrados no seu aparelho antes de ser enviados.",
+        "p2": "A chave de cada diário fica só nos aparelhos aprovados de quem participa dele. O servidor guarda apenas o conteúdo cifrado e cópias da chave trancadas para cada aparelho, que só o próprio aparelho abre.",
+        "p3": "O código de recuperação também não fica com a gente. Sem ele, nós não temos como abrir um diário."
+      },
+      "canSee": {
+        "title": "O que nós vemos",
+        "p1": "Seu e-mail (para o link de acesso e os convites), quem participa de cada diário e com qual permissão, o nome que cada pessoa usa no diário, o tipo de aparelho (como \"Chrome · Android\"), as datas em que as coisas foram salvas e o tamanho delas.",
+        "p2": "Não pedimos telefone, documento, foto nem localização."
+      },
+      "visibility": {
+        "title": "Quem vê o quê",
+        "p1": "Só as pessoas do diário, nos aparelhos aprovados, leem o que está nele. Quem só lê não escreve nem convida. Só quem criou o diário vê os e-mails das outras pessoas.",
+        "p2": "Quem é removido perde o acesso na hora, e as entradas seguintes passam a usar uma chave nova."
+      },
+      "retention": {
+        "title": "Por quanto tempo",
+        "p1": "Enquanto o diário existir. Quem criou o diário pode excluí-lo a qualquer momento, com tudo o que tem dentro. Cada pessoa pode sair de um diário ou excluir a própria conta."
+      },
+      "providers": {
+        "title": "Serviços que usamos",
+        "p1": "O app roda na Vercel e os dados ficam no Supabase, na região de São Paulo. Os e-mails de acesso saem pelo Supabase. Nenhum deles recebe o conteúdo dos diários em claro."
+      },
+      "rights": {
+        "title": "Seus direitos",
+        "p1": "Pela LGPD, você pode pedir acesso, correção ou exclusão dos seus dados. O jeito mais rápido é pelo próprio app: sair de um diário, excluir um diário ou excluir sua conta.",
+        "p2": "Como o conteúdo é cifrado, só as pessoas do diário conseguem exportá-lo, pelo resumo do período."
+      },
+      "controller": {
+        "title": "Responsável",
+        "p1": "{operator} é o responsável pelos dados que chegam ao servidor. O que é escrito nos diários é de responsabilidade de quem escreve."
+      }
+    }
+  },
+  "Terms": {
+    "title": "Termos de uso",
+    "intro": "Regras curtas para usar o curadiário. Ao criar um diário ou aceitar um convite, você concorda com elas.",
+    "sections": {
+      "service": {
+        "title": "O serviço",
+        "p1": "O curadiário é um caderno de anotações gratuito, oferecido como está, em fase de piloto. Pode mudar, ficar fora do ar ou ser encerrado.",
+        "p2": "Guarde suas cópias: exporte o relatório pelo resumo do período."
+      },
+      "notCare": {
+        "title": "Não é atendimento de saúde",
+        "p1": "O curadiário não é prontuário, não faz diagnóstico, não dá orientação clínica e não substitui acompanhamento profissional. As escalas de humor e agressividade são apenas uma forma de anotar, não uma avaliação.",
+        "p2": "Ninguém monitora as entradas. Em emergência, ligue 188 (CVV) ou 192 (SAMU)."
+      },
+      "aboutSomeone": {
+        "title": "Escrever sobre outra pessoa",
+        "p1": "Se o diário for sobre outra pessoa, você deve ter o consentimento dela ou ser responsável legal por ela. Convide só quem ela aceitaria que lesse."
+      },
+      "responsibility": {
+        "title": "Cada um responde pelo que escreve",
+        "p1": "Quem escreve responde pelo conteúdo das entradas. Quem cria o diário responde por quem convida e por quais aparelhos aprova.",
+        "p2": "Não use o curadiário para vigiar pessoas ou para fins ilegais."
+      },
+      "keys": {
+        "title": "Chaves e código de recuperação",
+        "p1": "Como nós não temos as chaves, não conseguimos recuperar um diário. Se todos os aparelhos aprovados se perderem e ninguém tiver o código de recuperação, o conteúdo se perde. Guarde o código fora do celular."
+      },
+      "license": {
+        "title": "Código aberto",
+        "p1": "O código é publicado sob a licença AGPL-3.0 em <repo>github.com/pacioli1618-oss/curadiario</repo>."
+      },
+      "law": {
+        "title": "Lei aplicável",
+        "p1": "Estes termos seguem as leis do Brasil."
+      }
+    }
+  },
+  "Install": {
+    "button": "Fixar na tela do celular",
+    "title": "Fixar na tela do celular",
+    "intro": "Assim o curadiário fica junto dos seus apps e abre direto nos seus diários.",
+    "ios1": "Toque no botão Compartilhar (o quadrado com uma seta para cima), na barra do Safari.",
+    "ios2": "Role a lista e toque em \"Adicionar à Tela de Início\".",
+    "ios3": "Toque em \"Adicionar\". O ícone do curadiário aparece na tela do celular.",
+    "menu1": "Abra o menu do navegador (os três pontinhos ⋮).",
+    "menu2": "Toque em \"Adicionar à tela inicial\" ou \"Instalar app\" e confirme.",
+    "done": "Entendi"
+  }
+}
